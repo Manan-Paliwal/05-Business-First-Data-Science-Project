@@ -1,110 +1,56 @@
-# Capstone Project 5: Business-First Data Science Project
+# Loan Approval Prediction System
 
-## Loan Approval Prediction System
+An end-to-end classification project that applies machine learning to loan-application data and demonstrates how predictive modeling can support data-driven lending workflows.
+
+> **Note:** This is an educational portfolio project, not a production credit-decision system.
 
 ## Objective
 
-Develop a machine learning model that predicts whether a loan application should be approved based on applicant information.
+Predict the dataset's `Loan_Status` target from applicant information using a supervised machine-learning pipeline.
 
----
+## Problem Framing
 
-## Business Problem
+Loan decisions involve balancing financial risk with access to credit. This project explores how structured applicant data can be prepared and modeled to produce a baseline approval prediction.
 
-Banks receive thousands of loan applications every year.
+## Workflow
 
-Approving risky loans can lead to financial losses, while rejecting eligible applicants can reduce business opportunities.
+1. Business-problem definition
+2. Data loading and inspection
+3. Missing-value handling
+4. Exploratory data analysis
+5. Feature preparation
+6. Categorical encoding
+7. Train-test split
+8. Model training
+9. Model evaluation
+10. Business interpretation
 
-This project uses machine learning to assist banks in making faster and more informed loan approval decisions.
+## Model
 
----
+The project uses a **Random Forest Classifier** as its primary prediction model.
 
-## Dataset
+## Reported Performance
 
-**Loan Prediction Dataset**
-
-Target Variable:
-
-* Loan_Status
-
----
-
-## Project Workflow
-
-1. Business Understanding
-2. Data Collection
-3. Data Cleaning
-4. Exploratory Data Analysis
-5. Feature Engineering
-6. Data Preprocessing
-7. Train-Test Split
-8. Model Training
-9. Model Evaluation
-10. Business Insights
-
----
-
-## Data Preprocessing
-
-* Missing Value Handling
-* Label Encoding
-* Feature Selection
-
----
-
-## Machine Learning Model
-
-* Random Forest Classifier
-
----
-
-## Model Performance
-
-| Metric   | Value      |
-| -------- | ---------- |
+| Metric | Result |
+|---|---:|
 | Accuracy | **74.80%** |
 
----
+Accuracy is useful as a baseline summary, but a real lending system would require deeper analysis of class-level errors, fairness, calibration, stability, and the cost of incorrect decisions.
 
-## Business Insights
+## Tech Stack
 
-The model can help banks:
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
 
-* Reduce financial risk
-* Improve loan approval decisions
-* Speed up application processing
-* Support data-driven lending
-
----
-
-## Skills Demonstrated
-
-* Business Understanding
-* Data Cleaning
-* Feature Engineering
-* Classification
-* Random Forest
-* Model Evaluation
-* Business Analytics
-
----
-
-## Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* Jupyter Notebook
-
----
-
-## Project Structure
+## Repository Structure
 
 ```text
 05-Business-First-Data-Science-Project/
-
 ├── data/
 ├── images/
 ├── notebooks/
@@ -116,21 +62,40 @@ The model can help banks:
 └── .gitignore
 ```
 
----
+## Skills Demonstrated
+
+- Business-first ML framing
+- Data cleaning
+- Feature preparation
+- Classification
+- Random Forest
+- Model evaluation
+- Translating model output into business context
+
+## Important Limitations
+
+This project should be treated as a learning exercise rather than an automated lending decision system. A production-grade system would need:
+
+- More complete classification metrics
+- Cross-validation
+- Bias and fairness assessment
+- Model calibration
+- Robust feature governance
+- Explainability and auditability
+- Regulatory and domain review
 
 ## Future Improvements
 
-* Hyperparameter tuning
-* Cross-validation
-* XGBoost implementation
-* Web application deployment using Streamlit
+- Compare Logistic Regression, XGBoost, and other classifiers
+- Add precision, recall, F1, ROC-AUC, and PR-AUC
+- Perform cross-validation
+- Tune hyperparameters
+- Add model interpretability
+- Analyze class imbalance
+- Add fairness checks
+- Build a small inference interface
 
 ---
 
-## Author
-
-**Manan Paliwal**
-
-AI & Machine Learning Student
-
-Birla Institute of Technology, Mesra
+**Author:** Manan Paliwal  
+B.Tech Computer Science Engineering — Artificial Intelligence & Machine Learning
